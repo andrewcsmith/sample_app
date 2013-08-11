@@ -8,11 +8,16 @@ gem 'thin'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork-rails', github: 'sporkrb/spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.0.0'
   gem 'capybara', '2.1.0'
+  gem 'growl'
 end
 
 gem 'sass-rails', '~> 4.0.0'
